@@ -27,3 +27,13 @@ document.onkeypress = function (event) {
     })
     document.querySelector('#keyboard .k-key[data="'+event.keyCode+'"]').classList.add('active');
 }
+    document.querySelectorAll('#keyboard .k-key').forEach(function(el) {
+        el.onclick = function (event) {
+            document.querySelectorAll('#keyboard .k-key').forEach(function(el) {
+                el.classList.remove('active');
+            });
+            let code = this.getAttribute('data');
+            this.classList.add('active');
+            console.log(code);
+        }
+    })
