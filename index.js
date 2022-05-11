@@ -1,6 +1,13 @@
 alert("Всем привет! Проверьте, пожалуйста, мою работу 12.05 после 18.00");
-let container = document.createElement("div");
-document.body.append(container);
+let area = document.createElement("textarea");
+document.body.append(area);
+area.id = 'area';
+let div_cofee = document.createElement("div");
+document.body.append(div_cofee);
+div_cofee.id = 'div_cofee';
+// let container = document.createElement("div");
+// document.body.append(container);
+// container.id = 'container';
 let keyboard = document.createElement("div");
 document.body.append(keyboard);
 keyboard.id = 'keyboard';
