@@ -1,7 +1,55 @@
-#keyboard {
-    display: block;
-    border: 2px solid black;
+* {
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth; 
+    max-width:100%; 
+    min-height:100%;
+    overflow: hidden;
+}
+
+body {
+    /* background-color: rgb(249, 245, 239); */
+    /* background: linear-gradient(to top left, rgb(247, 229, 203), rgb(249, 245, 239), rgb(251, 241, 231)); */
+    background-image: url(/Keyboard/wood-1853403__340.webp);
+    background-size: 100%;
+    font-size: 1.5rem;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+#area {
+    background-color: rgb(240, 212, 178);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 15%;
+    border: 2px solid rgb(67, 53, 35);
+    border-radius: 25px;
     padding: 5px;
+    width: 50%;
+    height: 150px;
+    /* background:transparent; */
+}
+
+#keyboard {
+    background-color: rgb(240, 212, 178);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: 2px solid rgb(67, 53, 35);
+    border-radius: 25px;
+    padding: 5px;
+    max-width: 50%;
 }
 
 #keyboard::after {
@@ -13,7 +61,8 @@
 .k-key {
     width: 50px;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid rgb(67, 53, 35);
+    border-radius: 5px;
     margin: 3px;
     padding: 3px;
     float: left;
@@ -26,5 +75,5 @@
 }
 
 .active {
-    background: orange;
+    background: rgb(222, 199, 171);
 }
